@@ -26,7 +26,7 @@
             <h2>Updates</h2>
             
             <div class="box">
-                 <!-- ASTRODIENST PPOS -->
+        <!-- ASTRODIENST PPOS -->
       <div id = "astro-container">
         <div id="astro-top">
           <div align="left" style="width:200px;"><a href="https://www.astro.com" target="_blank" style="font:normal 11px Verdana, Geneva, sans-serif;color:#666;text-decoration:none;text-align:center;" id="be6d0c5371bdd4159747f732653ac645"></a></div>
@@ -46,137 +46,78 @@
                 <li><a href="#">learn</a></li>
                 <li><a href="#">read</a></li>
                 <li><a href="#">more resources</a></li>
-                </li><li><a href="/sadgrl/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li>
-                <li><a href="/sadgrl/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li>
-                <li><a href="/sadgrl/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li>
-                <li><a href="/sadgrl/projects/ideas/" target="_blank">Site Ideas</a></li>
+                </li><li><a href="" target="_blank"> etc </a></li>
             </ul>
         </aside>
         <main>
-            <h1>ASTROBYTE</h1>
-            <p><strong>Feel free to start here!</strong></p>
+            <h1>astrobyte</h1>
+            <p><strong> Feel free to start here!</strong></p>
             <p>Check the links in the sidebar for some insight on  your own zodiac sign, or click around and start learning about the entirety of your birth chart!</p>
-
-
         </main>
         
     </div>
-    <footer id="footer" style="margin-top: 10px;"> Made with love</footer>
+    <footer id="footer" style="margin-top: 10px;"> Made with HTML and Github Pages</footer>
 </div>
-<!-- THIS IS THE CSS !-->
+
+
+    
+<!-- begin css!-->
 <style>
-    /* user styles */
-
-    /* styles are what change the color and sizes of stuff on your site. */
-
-    /* these are variables that are being used in the code
-these tended to confuse some people, so I only kept 
-the images as variables */
-
+    
     :root {
         --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
         --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
-
-        /* colors */
         --content: #43256E;
     }
 
-    /* if you have the URL of a font, you can set it below */
-    /* feel free to delete this if it's not your vibe */
-
-    /* this seems like a lot for just one font and I would have to agree 
-but I wanted to include an example of how to include a custom font.
-If you download a font file you can upload it onto your Neocities
-and then link it! Many fonts have separate files for each style
-(bold, italic, etc. T_T) which is why there are so many!
-
-*/
+    
 
     @font-face {
         font-family: Nunito;
         src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
     }
 
-    @font-face {
-        font-family: Nunito;
-        src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
-        font-weight: bold;
-    }
-
-    @font-face {
-        font-family: Nunito;
-        src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
-        font-style: italic;
-    }
-
-    @font-face {
-        font-family: Nunito;
-        src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
-        font-style: italic;
-        font-weight: bold;
-    }
+    
 
     body {
         font-family: 'Nunito', sans-serif;
         margin: 0;
         background-color: #08031A;
-        /* you can delete the line below if you'd prefer to not use an image */
         background-size: 65px;
         color: #fceaff;
-        background-image: url("https://sadhost.neocities.org/images/tiles/anistars.gif");
+        background-image: url("");
     }
 
     * {
         box-sizing: border-box;
     }
 
-    /* below this line is CSS for the layout */
-
-    /* this is a CSS comment
-to uncomment a line of CSS, remove the * and the /
-before and after the text */
-
-
-    /* the "container" is what wraps your entire website */
-    /* if you want something (like the header) to be Wider than
-the other elements, you will need to move that div outside
-of the container */
+    /* (Wrapper */
     #container {
         max-width: 900px;
-        /* this is the width of your layout! */
-        /* if you change the above value, scroll to the bottom
-and change the media query according to the comment! */
         margin: 0 auto;
-        /* this centers the entire page */
     }
 
-    /* the area below is for all links on your page
-EXCEPT for the navigation */
+    /* Other links */
     #container a {
         color: #ED64F5;
         font-weight: bold;
-        /* if you want to remove the underline
-you can add a line below here that says:
-text-decoration:none; */
     }
 
     #header {
         width: 100%;
         background-color: #5e4e8c;
-        /* header color here! */
+
         height: 150px;
-        /* this is only for a background image! */
-        /* if you want to put images IN the header, 
-you can add them directly to the <div id="header"></div> element! */
+
         background-image: var(--header-image);
         background-size: 100%;
     }
 
-    /* navigation section!! */
+
     #navbar {
         height: 40px;
         background-color: #13092D;
-        /* navbar color */
         width: 100%;
     }
 
@@ -192,16 +133,14 @@ you can add them directly to the <div id="header"></div> element! */
         padding-top: 10px;
     }
 
-    /* navigation links*/
+    /* navbar */
     #navbar li a {
         color: #ED64F5;
         /* navbar text color */
         font-weight: 800;
         text-decoration: none;
-        /* this removes the underline */
     }
-
-    /* navigation link when a link is hovered over */
+    
     #navbar li a:hover {
         color: #a49cba;
         text-decoration: underline;
@@ -232,12 +171,6 @@ between the sidebars! */
         order: 2;
     }
 
-    /* what's this "order" stuff about??
-allow me to explain!
-if you're using both sidebars, the "order" value
-tells the CSS the order in which to display them.
-left sidebar is 1, content is 2, and right sidebar is 3! */
-
     */ #leftSidebar {
         order: 1;
     }
@@ -248,12 +181,10 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
 
     footer {
         background-color: #13092D;
-        /* background color for footer */
         width: 100%;
         height: 40px;
         padding: 10px;
         text-align: center;
-        /* this centers the footer text */
     }
 
     h1,
@@ -267,18 +198,14 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
     }
 
     strong {
-        /* this styles bold text */
         color: #ED64F5;
     }
 
-    /* this is just a cool box, it's the darker colored one */
     .box {
         background-color: #13092D;
         border: 1px solid #ED64F5;
         padding: 10px;
     }
-
-    /* CSS for extras */
 
     #topBar {
         width: 100%;
@@ -289,8 +216,7 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
     }
 
 
-    /* MEDIA QUERIES!!!! Subtract some value (stay consistent) from height/width and make that the new width for mobile
-*/
+    /* Media QUERIES!!!!*/
 
     @media only screen and (max-width: 800px) {
         #flex {
@@ -301,10 +227,6 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
             width: 100%;
         }
 
-        /* the order of the items is adjusted here for responsiveness!
-since the sidebars would be too small on a mobile device.
-feel free to play around with the order!
-*/
         main {
             order: 1;
         }
