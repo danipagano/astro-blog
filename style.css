@@ -40,7 +40,7 @@
 
         height: 150px;
 
-        background-image: var(--header-image);
+        background-image: url(moon.jpg);
         background-size: 100%;
     }
 
